@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+/* // <weight>: Use a value from 100 to 900
+// <uniquifier>: Use a unique and descriptive class name
+
+.exo-2-<uniquifier> {
+  font-family: "Exo 2", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+} */
+
+
+/* Cores Simples e Diretas */
+.positivo { color: #16A085; } /* Verde para 1, 2 ou 3 */
+.negativo { color: #FF0000; } /* Vermelho para -1, -2 ou -3 */
+.neutro   { color: #FFC107; } /* Branco para 0 */
+
+.painel-controle {
+    border-bottom: 2px solid;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    margin-left: 36px;
+    margin-right: 36px;
+}
+
+.painel-controle h1 {
+    font-family: "Exo 2", sans-serif;
+    font-size: 27px;
+    color: #1a1a1a;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-left: 36px;
+}
+
+.painel-controle h2 {
+    font-family: "Exo 2", sans-serif;
+    font-size: 21px;
+    color: #1a1a1a;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.painel-lateral {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 250px;
+    font-family: 'Exo 2', sans-serif;
+    color: #333;
+    margin-left: 36px;
+    margin-bottom: 12px;
+}
+
+#busca-nome {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 18px;
+    padding: 6px 15px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+    display: block;
+    margin-top: 8px;
+}
+
+#busca-nome:focus {
+    border-color: #999;
+}
+
+.opcoes-coluna {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 5px;
+}
+
+.opcoes-coluna label {
+    cursor: pointer;
+    font-size: 21px;    
+    color: #16A085;
+}
+
+.check-rating {
+    transform: scale(1.5);
+    accent-color: #555;
+}
+
+body {
+    font-family: "Exo 2", sans-serif;
+    font-size: 18px;
+}
+
+.lista-counters {
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+    display: block !important;
+    border-top: 1px solid #444;
+}
+
+button {
+    font-family: inherit;
+    font-size: inherit;
+}
+
+/* O "Pai" que alinha tudo com a sua busca e título */
+#lista-counter {
+    margin-left: 20px; 
+    margin-right: 20px;
+}
+
+.card-time {
+    border: 1px solid #444;
+    margin-bottom: 8px;
+    overflow: hidden;
+}
+
+.botao-titulo {
+    font-family: "Exo 2", sans-serif;
+    width: 100%;
+    padding: 15px;
+    background: #333;
+    color: #EEE;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+}
+
+button.botao-titulo {
+    font-family: "Exo 2", sans-serif !important;
+    font-size: 21px !important;
+}
+
+#lista-counters {
+    margin-left: 36px; 
+    margin-right: 36px;
+}
+
+.lista-oculta {
+    display: none;
+    padding: 10px;
+}
+
+.lista-oculta.visivel {
+    display: block !important;
+}
+
+.linha-counter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0;
+}
