@@ -217,8 +217,8 @@ button.botao-titulo {
 }
 
 #lista-counters {
-    margin-left: 36px; 
-    margin-right: 36px;
+    margin-left: 30px; 
+    margin-right: 30px;
 }
 
 .lista-oculta {
@@ -251,7 +251,7 @@ button.botao-titulo {
 
 
 /* --- DEBUG: APAGAR DEPOIS --- */
-* {
+/* * {
     outline: 1px solid rgba(255, 0, 0, 0.2);
 }
 
@@ -265,7 +265,7 @@ button.botao-titulo {
 
 .linha-counter span:first-child {
     background-color: rgba(255, 255, 0, 0.2);
-}
+} */
 /* ----------------------------
 
 /* MODAL */
