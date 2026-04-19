@@ -53,11 +53,13 @@ header {
 .painel-controle h1 {
     font-family: "Exo 2", sans-serif;
     font-size: 27px;
-    color: #1a1a1a;
+    color: white;
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
     margin-left: 36px;
     margin-bottom: 12px;
+    background-color: #2F3640;
+    text-align: center;
 }
 
 .destaque{
@@ -72,6 +74,16 @@ header {
     text-transform: uppercase;
     letter-spacing: 2px;
     margin-left: 36px;
+    margin-bottom: 6px;
+}
+
+.painel-controle h3 {
+    font-family: "Exo 2", sans-serif;
+    font-size: 18px;
+    color: #1a1a1a;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-left: 60px;
     margin-bottom: 12px;
 }
 
@@ -96,7 +108,7 @@ header {
     font-family: 'Exo 2', sans-serif;
     font-size: 18px;
     padding: 6px 15px;
-    width: 100%;
+    width: 90%;
     box-sizing: border-box;
     border: 2px solid #ccc;
     border-radius: 6px;
@@ -126,7 +138,7 @@ header {
 .opcoes-coluna {
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 6px;
     margin-top: 5px;
 }
 
@@ -219,7 +231,7 @@ button.botao-titulo {
 
 
 /* --- DEBUG: APAGAR DEPOIS --- */
-/* * {
+* {
     outline: 1px solid rgba(255, 0, 0, 0.2);
 }
 
@@ -233,7 +245,7 @@ button.botao-titulo {
 
 .linha-counter span:first-child {
     background-color: rgba(255, 255, 0, 0.2);
-} */
+}
 /* ---------------------------- */
 
 /* MODAL */
@@ -282,5 +294,15 @@ button.botao-titulo {
         gap: 15px; 
         justify-content: center; 
         flex-wrap: nowrap; 
+    }
+
+    .painel-controle h3 {
+    margin-left: 36px;
+    }
+
+    .limpar-chave {
+        width: 60px;
+        padding: 3px 6px;
+        font-size: 0.9rem;
     }
 }
