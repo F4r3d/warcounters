@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap');
 
 
 /* // <weight>: Use a value from 100 to 900
@@ -17,12 +18,36 @@
 .negativo { color: #FF0000; } /* Vermelho para -1, -2 ou -3 */
 .neutro   { color: #FFC107; } /* Branco para 0 */
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Exo 2", sans-serif;
+    font-size: 18px;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #fff; /* IMPORTANTE: Defina uma cor de fundo, senão o conteúdo de baixo aparece misturado */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1)
+}
+
 .painel-controle {
+    max-width: 100% !important; 
+
+
+    padding: 20px;
     border-bottom: 2px solid;
     margin-bottom: 20px;
     padding-bottom: 10px;
-    margin-left: 36px;
-    margin-right: 36px;
+    width: 100%;
+    gap: 10px;
 }
 
 .painel-controle h1 {
@@ -32,6 +57,12 @@
     text-transform: uppercase;
     letter-spacing: 2px;
     margin-left: 36px;
+    margin-bottom: 12px;
+}
+
+.destaque{
+    font-family: "UnifrakturMaguntia", cursive;
+    text-transform: none !important;
 }
 
 .painel-controle h2 {
@@ -40,20 +71,28 @@
     color: #1a1a1a;
     text-transform: uppercase;
     letter-spacing: 2px;
+    margin-left: 36px;
+    margin-bottom: 12px;
 }
 
 .painel-lateral {
     display: flex;
-    flex-direction: column;
-    gap: 15px;
-    width: 250px;
+    justify-content:space-around;
+    /* gap: 6px; */
+    width: 80%;
     font-family: 'Exo 2', sans-serif;
     color: #333;
     margin-left: 36px;
     margin-bottom: 12px;
 }
 
-#busca-nome {
+.campo-busca {
+    display: flex;
+    flex-direction: column;
+    gap: 6px
+}
+
+.chave {
     font-family: 'Exo 2', sans-serif;
     font-size: 18px;
     padding: 6px 15px;
@@ -70,10 +109,24 @@
     border-color: #999;
 }
 
+.limpar-chave {
+        width: fit-content;
+        padding: 8px 15px;
+        cursor: pointer;
+        background-color: #f0f0f0;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        align-self: flex-end;
+    }
+
+    #btn-limpar:hover {
+        background-color: #e0e0e0;
+    }
+
 .opcoes-coluna {
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 12px;
     margin-top: 5px;
 }
 
@@ -84,13 +137,9 @@
 }
 
 .check-rating {
+    margin-right: 6px;
     transform: scale(1.5);
     accent-color: #555;
-}
-
-body {
-    font-family: "Exo 2", sans-serif;
-    font-size: 18px;
 }
 
 .lista-counters {
@@ -105,7 +154,6 @@ button {
     font-size: inherit;
 }
 
-/* O "Pai" que alinha tudo com a sua busca e título */
 #lista-counter {
     margin-left: 20px; 
     margin-right: 20px;
@@ -152,7 +200,87 @@ button.botao-titulo {
 
 .linha-counter {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: flex-start;
     align-items: center;
     padding: 5px 0;
+}
+
+.linha-counter span:first-child {
+    min-width: 600px;
+    max-width: 600px;
+    display: inline-block;
+}
+
+.Y {
+    color: #3e0fd7;
+    cursor: pointer;
+}
+
+
+/* --- DEBUG: APAGAR DEPOIS --- */
+* {
+    outline: 1px solid rgba(255, 0, 0, 0.2);
+}
+
+.bloco {
+    border: 2px solid blue !important;
+}
+
+.linha-counter {
+    border: 2px solid green !important;
+}
+
+.linha-counter span:first-child {
+    background-color: rgba(255, 255, 0, 0.2);
+}
+/* ---------------------------- */
+
+/* MODAL */
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 600px;
+  border-radius: 8px;
+}
+
+.close {
+  float: right;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* FIM Modal */
+
+
+@media (max-width: 768px) {
+    .linha-counter {
+        justify-content: space-between;
+    }
+
+    .linha-counter span:first-child {
+        min-width: auto;
+        max-width: 180px;
+    }
+
+    .painel-lateral {
+        width: 100%; 
+        margin-left: 0; 
+        gap: 15px; 
+        justify-content: center; 
+        flex-wrap: nowrap; 
+    }
 }

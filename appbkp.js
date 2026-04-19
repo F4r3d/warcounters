@@ -46,7 +46,9 @@ function renderizar(dados, ratingsSelecionados = []) {
                 const simbolos = sub.rating !== 0 ? icone.repeat(Math.abs(sub.rating)) : "⦿";
 
                 linha.innerHTML = `
-                    <span>${sub.counter}</span>
+                    <span class="${sub.observacao}"
+                    onclick="abrirModal('${item.titulo}', '${sub.counter}')">
+                    ${sub.counter}</span>
                     <span style="color: ${cor}">${simbolos}</span>
                 `;
                 listaOculta.appendChild(linha);
@@ -72,27 +74,54 @@ function renderizar(dados, ratingsSelecionados = []) {
 }
 
 function filtrarTudo() {
-    // 1. Pega o campo e o que foi digitado (Uma única vez)
-    const campo = document.getElementById('busca-nome');
-    if (!campo) return; // Segurança: se não achar o campo, para aqui.
+    const campoNome = document.getElementById('busca-nome');
+    const campoAtk = document.getElementById('busca-nomeAtk');
     
-    const termoBusca = campo.value.toLowerCase();
+    const termoNome = campoNome.value.toLowerCase();
+    const termoAtk = campoAtk.value.toLowerCase();
 
-    // 2. Pega os ratings marcados
     const checks = document.querySelectorAll('.check-rating:checked');
     const ratingsSelecionados = Array.from(checks).map(cb => cb.value);
 
-    // 3. A Peneira (Filter)
-    const listaFiltrada = counters.filter(item => {
-        const bateTexto = item.titulo.toLowerCase().includes(termoBusca);
+    let listaFiltrada = [];
 
-        const temRatingNoSub = ratingsSelecionados.length === 0 || 
-                               item.subtitulo.some(sub => ratingsSelecionados.includes(sub.rating.toString()));
+    // --- PESQUISA 1: Por Título (Defesas) ---
+    if (termoNome !== "" && termoAtk === "") {
+        listaFiltrada = counters.filter(item => {
+            const bateTitulo = item.titulo.toLowerCase().includes(termoNome);
+            const temRating = ratingsSelecionados.length === 0 || 
+                              item.subtitulo.some(sub => ratingsSelecionados.includes(sub.rating.toString()));
+            return bateTitulo && temRating;
+        });
+    } 
+    // --- PESQUISA 2: Por Counter (Atacantes) ---
+    else if (termoAtk !== "" && termoNome === "") {
+    listaFiltrada = counters
+        .map(item => {
+            const subtitulosFiltrados = item.subtitulo.filter(sub => {
+                const bateTextoSub = sub.counter.toLowerCase().includes(termoAtk);
+                const bateRatingSub = ratingsSelecionados.length === 0 || 
+                                      ratingsSelecionados.includes(sub.rating.toString());
+                return bateTextoSub && bateRatingSub;
+            });
 
-        return bateTexto && temRatingNoSub;
-    });
+            if (subtitulosFiltrados.length > 0) {
+                return {
+                    ...item,
+                    subtitulo: subtitulosFiltrados
+                };
+            }
+        })
+        .filter(Boolean);
+    }
+    // --- SEM PESQUISA DE TEXTO: Filtra só pelos Ratings ---
+    else {
+        listaFiltrada = counters.filter(item => {
+            return ratingsSelecionados.length === 0 || 
+                   item.subtitulo.some(sub => ratingsSelecionados.includes(sub.rating.toString()));
+        });
+    }
 
-    // 4. Manda desenhar
     renderizar(listaFiltrada, ratingsSelecionados);
 }
 
@@ -100,7 +129,16 @@ function filtrarTudo() {
 // Vigia do Texto (com o delay de 300ms que conversamos)
 let timer;
 document.getElementById('busca-nome').addEventListener('input', () => {
+    const buscaAtk = document.getElementById('busca-nomeAtk');
     clearTimeout(timer);
+    buscaAtk.value = '';
+    timer = setTimeout(filtrarTudo, 300);
+});
+
+document.getElementById('busca-nomeAtk').addEventListener('input', () => {
+    const buscaDef = document.getElementById('busca-nome');
+    clearTimeout(timer);
+    buscaDef.value = '';
     timer = setTimeout(filtrarTudo, 300);
 });
 
@@ -109,5 +147,55 @@ document.querySelectorAll('.check-rating').forEach(check => {
     check.addEventListener('change', filtrarTudo);
 });
 
+// LIMPAR INPUTs
+const limpar = document.getElementById('btn-limpar');
+const campoBusca = document.getElementById('busca-nome');
 
-renderizar(counters);
+const limparAtk = document.getElementById('btn-limparAtk');
+const campoBuscaAtk = document.getElementById('busca-nomeAtk');
+
+limpar.addEventListener('click', () => {
+    campoBuscaAtk.value = "";
+    campoBusca.value = "";
+    campoBusca.focus();
+
+    filtrarTudo();
+
+});
+
+limparAtk.addEventListener('click', () => {
+    campoBusca.value = "";
+    campoBuscaAtk.value = "";
+    campoBuscaAtk.focus();
+
+    filtrarTudo();
+
+});
+
+// FIM Limpar Inputs
+
+
+renderizar(counters); //IMPORTANTE
+
+
+function abrirModal(titulo, sub) {
+    
+    const modal = document.getElementById("obsModal");
+    const campoAdversario = document.getElementById("modal-adversario");
+    const campoTitulo = document.getElementById("modal-titulo");
+    const campoObs = document.getElementById("modal-obs");
+
+    if (!dicionario[titulo] || !dicionario[titulo][sub]) {
+        return;
+    }
+
+    campoAdversario.innerText = titulo;
+    campoTitulo.innerText = sub;
+    campoObs.innerText = dicionario[titulo][sub];
+    
+    modal.style.display = "block";
+}
+
+function fecharModal() {
+    document.getElementById("obsModal").style.display = "none";
+}

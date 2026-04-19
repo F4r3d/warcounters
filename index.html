@@ -6,37 +6,67 @@
     <link rel="stylesheet" href="style.css">
     <title>WAR Counters - Marvel Church</title>
 </head>
-<header class="painel-controle">
-
-    <h1>PAINEL DE ATAQUE</h1>
-    
-    <div class="painel-lateral">
-    <h2 class="titulo-sessao">FILTRAR DADOS</h2>
-    
-    <div class="campo-busca">
-        <label>Palavra-chave:</label>
-        <input type="text" id="busca-nome" placeholder="Digite o time...">
-    </div>
-
-    <div class="campo-checks">
-        <label>Nível de Vantagem:</label>
-        <div class="opcoes-coluna">
-            <label><input type="checkbox" class="check-rating" value="3">▲▲▲</label>
-            <label><input type="checkbox" class="check-rating" value="2">▲▲</label>
-            <label><input type="checkbox"class="check-rating"  value="1">▲</label>
-        </div>
-    </div>
-</div>
-
-</header>
 
 <body>
 
-    <div id="lista-counters">
+    
+    <header class="painel-controle">
+
+    <h1>
+        PAINEL DE ATAQUE - <span class="destaque">New Asgard Brasil</span>
+    </h1>
+
+    <h2 class="titulo-sessao">FILTRAR DADOS</h2>
+    
+    <div class="painel-lateral">
+    
+        <div class="campo-busca">
+            <label>termo - Defesa:</label>
+            <input type="text" class="chave" id="busca-nome" placeholder="Digite o time...">
+            <button type="button" class="limpar-chave" id="btn-limpar">Limpar</button>
+        </div>
+
+        <div class="campo-checks">
+            <label>Nível de Vantagem:</label>
+            <div class="opcoes-coluna">
+                <label><input type="checkbox" class="check-rating" value="3">▲▲▲</label>
+                <label><input type="checkbox" class="check-rating" value="2">▲▲</label>
+                <label><input type="checkbox"class="check-rating"  value="1">▲</label>
+            </div>
+        </div>
+
+        <div class="campo-busca">
+            <label>termo - Ataque:</label>
+            <input type="text" class="chave" id="busca-nomeAtk" placeholder="Digite o time...">
+            <button type="button" class="limpar-chave" id="btn-limparAtk">Limpar</button>
+        </div>
+
     </div>
 
-    <script src="counters.js"></script>
-    <script src="appbkp.js"></script>
+    </header>
+
+    <main>
+
+        <div id="lista-counters">
+        </div>
+
+        <script src="counters.js"></script>
+        <script src="dicionario.js"></script>
+        <script src="appbkp.js"></script>
+
+
+    </main>
+
+    <!-- MODAL -->
+    <div id="obsModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="fecharModal()">&times;</span>
+            <h3 id="modal-adversario" style="color: gray; font-size: 0.9em; margin-bottom: 5px;"></h3>
+            <h2 id="modal-titulo" style="font-size: 1em; margin-bottom: 5px;"></h2>
+            <hr>
+            <p id="modal-obs"></p>
+        </div>
+    </div>
     
 </body>
 </html>

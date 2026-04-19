@@ -507,7 +507,7 @@ const counters = [
             { counter: "Phoenix Force + Knull + Black Cat + Quasar", rating: -3, observacao: "N" },
             { counter: "Secret Warriors + Scarlet Witch (Zombie) / Quasar (no Domino)", rating: -2, observacao: "N" },
             { counter: "Scarlet Witch (Zombie) + Yo-Yo (Raider) + Black Widow (Striker) + Guardian + Black Cat", rating: -2, observacao: "N" },
-            { counter: "Vigilante", rating: -1, observacao: "Y" }
+            { counter: "Vigilante", rating: -1, observacao: "N" }
         ]
     },
     {
@@ -580,7 +580,10 @@ const counters = [
             { counter: "Nightstalker", rating: 3, observacao: "N" },
             { counter: "Orchis", rating: 3, observacao: "N" },
             { counter: "Vigilante", rating: 3, observacao: "N" },
+            { counter: "Hellfire Club", rating: 3, observacao: "N" },
             { counter: "Insidious Six + Vulture + Green Goblin (Classic)", rating: 3, observacao: "N" },
+            { counter: "Immortal Weapon", rating: 3, observacao: "N" },
+            { counter: "Champion", rating: 3, observacao: "N" },
             { counter: "Thunderbolt", rating: -1, observacao: "N" }
         ]
     },
@@ -754,11 +757,11 @@ const counters = [
             { counter: "Undying", rating: 3, observacao: "N" },
             { counter: "Illuminati", rating: 2, observacao: "N" },
             { counter: "Fantastic Four (MCU)", rating: 1, observacao: "N" },
-            { counter: "Liberty", rating: 1, observacao: "N" },
             { counter: "Undying + Apocalypse", rating: 1, observacao: "N" },
             { counter: "Underworld", rating: 2, observacao: "N" },
             { counter: "Mercs For Money", rating: -2, observacao: "N" },
-            { counter: "Secret Warriors", rating: -2, observacao: "N" },
+            { counter: "Secret Warrior", rating: -2, observacao: "N" },
+            { counter: "Liberty", rating: -3, observacao: "N" },
             { counter: "Nightstalkers", rating: -3, observacao: "N" }
         ]
     },
@@ -1257,11 +1260,6 @@ const counters = [
         ]
     },
     {
-        titulo: "Phoenix Force + 2",
-        subtitulo: [
-        ]
-    },
-    {
         titulo: "Phoenix Force + Blastaar + Thunderstrike",
         subtitulo: [
             { counter: "Mighty Avenger", rating: 2, observacao: "N" }
@@ -1640,12 +1638,12 @@ const counters = [
     {
         titulo: "Winter Guard",
         subtitulo: [
+            { counter: "Professor Xavier + Quasar + Blade + Oath + Agatha Harkness", rating: 3, observacao: "N" },
             { counter: "Brimstone + Professor Xavier (no Elsa Bloodstone)", rating: 3, observacao: "N" },
             { counter: "Fantastic Four (MCU) + Professor Xavier + Shadow King", rating: 3, observacao: "N" },
             { counter: "Phoenix Force + Professor Xavier + Quasar", rating: 3, observacao: "N" },
             { counter: "Nightstalker + Professor Xavier + Quasar", rating: 3, observacao: "N" },
-            { counter: "Winter Guard + Cable / Oath / Emma Frost (no Yelena Belova)", rating: 3, observacao: "N" },
-            { counter: "Winter Guard", rating: 2, observacao: "N" }
+            { counter: "Winter Guard + Cable / Oath / Emma Frost (no Yelena Belova)", rating: 3, observacao: "N" }
         ]
     },
     {
