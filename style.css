@@ -42,12 +42,13 @@ header {
     max-width: 100% !important; 
     border-bottom: 2px solid;
     margin-bottom: 20px;
-    padding: 15px 20px;
+    padding: 6px 12px;
     gap: 10px;
 }
 
 .painel-controle h1 {
     font-family: "Exo 2", sans-serif;
+ 
     font-size: 27px;
     color: white;
     text-transform: uppercase;
@@ -73,15 +74,18 @@ header {
 
 .painel-data h2 {
     font-family: "Exo 2", sans-serif;
+    width: auto;
     font-size: 21px;
     color: #1a1a1a;
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     margin-left: 36px;
     margin-bottom: 6px;
 }
 
 .data {
+    white-space: nowrap;   /* impede quebra */
+    margin-left: auto;
     font-size: 0.9rem;
     color: #888;
 }
@@ -113,11 +117,17 @@ header {
     gap: 6px
 }
 
+.linha-input {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
 .chave {
+    flex: 1;
     font-family: 'Exo 2', sans-serif;
     font-size: 18px;
     padding: 6px 15px;
-    width: 90%;
     box-sizing: border-box;
     border: 2px solid #ccc;
     border-radius: 6px;
@@ -131,14 +141,15 @@ header {
 }
 
 .limpar-chave {
-        width: fit-content;
-        padding: 8px 15px;
-        cursor: pointer;
-        background-color: #f0f0f0;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        align-self: flex-end;
-    }
+    white-space: nowrap;
+    width: fit-content;
+    padding: 8px 15px;
+    cursor: pointer;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    align-self: flex-end;
+}
 
     #btn-limpar:hover {
         background-color: #e0e0e0;
@@ -240,7 +251,7 @@ button.botao-titulo {
 
 
 /* --- DEBUG: APAGAR DEPOIS --- */
-/* * {
+* {
     outline: 1px solid rgba(255, 0, 0, 0.2);
 }
 
@@ -254,7 +265,7 @@ button.botao-titulo {
 
 .linha-counter span:first-child {
     background-color: rgba(255, 255, 0, 0.2);
-} */
+}
 /* ----------------------------
 
 /* MODAL */
@@ -297,17 +308,31 @@ button.botao-titulo {
         max-width: 180px;
     }
 
+    .painel-controle h1,
+    .painel-data h2,
+    .painel-controle h3,
     .painel-lateral {
-        width: 100%; 
-        margin-left: 0; 
-        gap: 15px; 
-        justify-content: center; 
-        flex-wrap: nowrap; 
+        margin-left: 0;
+        width: 100%;
     }
 
-    .painel-controle h3 {
-    margin-left: 36px;
+.painel-lateral {
+  display: flex;
+  justify-content: space-between; /* distribui bem os blocos */
+  gap: 20px;                      /* garante espaço fixo entre eles */
+  width: 100%;
+  margin-left: 0;
+}
+
+    .linha-input {
+    flex-direction: column;
     }
+
+    .linha-input input,
+    .linha-input button {
+    width: 100%;
+    margin-bottom: 8px;
+  }
 
     .limpar-chave {
         width: 60px;
