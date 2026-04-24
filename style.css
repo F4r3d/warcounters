@@ -297,8 +297,18 @@ button.botao-titulo {
 
 /* FIM Modal */
 
+@media screen and (min-width: 1000px) {
+    html, body {
+        overflow-x: hidden;
+    }
+    body {
+        padding: 0 20px;
+    }
+}
+
 
 @media (max-width: 768px) {
+
     .linha-counter {
         justify-content: space-between;
     }
