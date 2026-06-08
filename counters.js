@@ -2,6 +2,7 @@ const counters = [
     {
         titulo: "Absolute A-Force",
         subtitulo: [
+            { counter: "Omen", rating: 3, observacao: "N" },
             { counter: "Brimstone", rating: 3, observacao: "N" },
             { counter: "Secret Warrior", rating: 3, observacao: "N" },
             { counter: "Liberty", rating: 2, observacao: "Y" },
@@ -16,12 +17,14 @@ const counters = [
     {
         titulo: "Abosolute A-Force + Professor Xavier + Knull",
         subtitulo: [
-            { counter: "Liberty + Quasar (no War Machine)", rating: 2, observacao: "Y" }
+            { counter: "Liberty + Quasar (no War Machine)", rating: 2, observacao: "Y" },
+            { counter: "Brimstone + Apocalypse (no Elsa Bloodstone)", rating: 2, observacao: "N" }
         ]
     },
     {
         titulo: "Absolute A-Force + Super Skrull",
         subtitulo: [
+            { counter: "Omen", rating: 3, observacao: "N" },
             { counter: "Brimstone", rating: 3, observacao: "N" },
             { counter: "Secret Warrior", rating: 3, observacao: "N" },
             { counter: "Hive-Mind + Knull + Mephisto (no Venom and Gwenom)", rating: 3, observacao: "Y" },
@@ -34,6 +37,7 @@ const counters = [
     {
         titulo: "Absolute A-Force + Super Skrull + Dormammu",
         subtitulo: [
+            { counter: "Omen", rating: 3, observacao: "N" },
             { counter: "Brimstone", rating: 2, observacao: "N" },
             { counter: "Hive-Mind + Knull + Mephisto (no Venom and Gwenom)", rating: 3, observacao: "Y" },
             { counter: "Liberty", rating: 2, observacao: "Y" },
@@ -46,6 +50,7 @@ const counters = [
     {
         titulo: "Absolute A-Force + Odin",
         subtitulo: [
+            { counter: "Omen", rating: 3, observacao: "N" },
             { counter: "Brimstone", rating: 3, observacao: "N" },
             { counter: "Hive-Mind + Knull + Mephisto (no Venom and Gwenom)", rating: 3, observacao: "Y" },
             { counter: "Liberty + Mephisto (no War Machine)", rating: 2, observacao: "Y" }
@@ -54,6 +59,7 @@ const counters = [
     {
         titulo: "Absolute A-Force + Mephisto + Super Skrull",
         subtitulo: [
+            { counter: "Omen", rating: 3, observacao: "N" },
             { counter: "Brimstone", rating: 3, observacao: "N" },
             { counter: "Undying", rating: 3, observacao: "N" },
             { counter: "Liberty + Knull", rating: 2, observacao: "Y" },
@@ -64,6 +70,7 @@ const counters = [
     {
         titulo: "Absolute A-Force + Odin + Super Skrull",
         subtitulo: [
+            { counter: "Omen", rating: 3, observacao: "N" },
             { counter: "Brimstone", rating: 3, observacao: "N" },
             { counter: "Liberty + Mephisto (no War Machine)", rating: 2, observacao: "Y" },
             { counter: "Mephisto + Ares + Ultimus + Apocalypse + Scarlet Witch (Zombie)", rating: 1, observacao: "Y" },
@@ -76,6 +83,7 @@ const counters = [
     {
         titulo: "Absolute A-Force + Mephisto + Black Knight",
         subtitulo: [
+            { counter: "Omen", rating: 3, observacao: "N" },
             { counter: "Brimstone", rating: 3, observacao: "N" },
             { counter: "Undying", rating: 3, observacao: "N" },
             { counter: "Orchis + Quasar (no Omega Sentinel)", rating: 1, observacao: "N" }
@@ -84,6 +92,7 @@ const counters = [
     {
         titulo: "Kahhori + Ms. Marvel (Classic) + Knull + Mephisto + Super Skrull",
         subtitulo: [
+            { counter: "Omen", rating: 3, observacao: "N" },
             { counter: "Brimstone", rating: 3, observacao: "N" },
             { counter: "Undying", rating: 3, observacao: "N" },
             { counter: "Liberty + Knull + Ultimus", rating: 2, observacao: "Y" }
@@ -92,6 +101,7 @@ const counters = [
     {
         titulo: "Kahhori + Ms. Marvel (Classic) + Nightcrawler + Mephisto + Thanos (Endgame)",
         subtitulo: [
+            { counter: "Omen", rating: 3, observacao: "N" },
             { counter: "Brimstone", rating: 3, observacao: "N" },
             { counter: "Undying", rating: 3, observacao: "N" },
             { counter: "Liberty + Quasar (no War Machine)", rating: 2, observacao: "N" }
@@ -100,6 +110,7 @@ const counters = [
     {
         titulo: "Kahhori + Ms. Marvel (Classic) + Medusa/Super Skrull + Mephisto + Thanos (Endgame)",
         subtitulo: [
+            { counter: "Omen", rating: 3, observacao: "N" },
             { counter: "Brimstone", rating: 3, observacao: "N" },
             { counter: "Undying", rating: 3, observacao: "N" },
             { counter: "Liberty + Knull (no War Machine)", rating: 2, observacao: "Y" },
@@ -109,6 +120,7 @@ const counters = [
     {
         titulo: "Kahhori + Ms. Marvel (Classic) + Spider-Man (Pavitr) + Red Goblin + Carnage",
         subtitulo: [
+            { counter: "Omen", rating: 3, observacao: "N" },
             { counter: "Brimstone", rating: 3, observacao: "N" },
             { counter: "Undying", rating: 3, observacao: "N" },
             { counter: "Secret Warrior", rating: 3, observacao: "N" },
@@ -120,6 +132,7 @@ const counters = [
     {
         titulo: "Kahhori + Ms. Marvel (Classic) + Odin + Knull + Dormammu",
         subtitulo: [
+            { counter: "Omen", rating: 3, observacao: "N" },
             { counter: "Brimstone", rating: 3, observacao: "N" },
             { counter: "Undying", rating: 3, observacao: "N" },
             { counter: "Liberty + Mephisto (no War Machine)", rating: 1, observacao: "Y" },
@@ -162,59 +175,58 @@ const counters = [
     {
         titulo: "Alpha Flight",
         subtitulo: [
+            { counter: "Shadow Conclave", rating: 3, observacao: "N" },
+            { counter: "Winter Guard", rating: 3, observacao: "N" },
             { counter: "Brimstone", rating: 3, observacao: "N" },
             { counter: "Secret Warrior", rating: 3, observacao: "N" },
             { counter: "Mercs For Money", rating: 3, observacao: "Y" },
             { counter: "Undying", rating: 3, observacao: "N" },
-            { counter: "Mighty Avenger", rating: 3, observacao: "Y" },
             { counter: "Liberty", rating: 3, observacao: "Y" },
-            { counter: "Absolute A-Force + Nico Minoru (no Ironheart)", rating: 2, observacao: "N" },
-            { counter: "A-Force + Apocalypse (no Captain Marvel)", rating: 2, observacao: "N" },
-            { counter: "Illuminati with Captain Britain", rating: 2, observacao: "Y" },
-            { counter: "4 Out Of Time (no Black Knight)", rating: 2, observacao: "Y" },
-            { counter: "Knowhere + Apocalypse (no Star-Lord Annihilation or Thor Infinity War)", rating: 1, observacao: "Y" },
-            { counter: "Gamma + Apocalypse (no Abomination)", rating: -1, observacao: "Y" },
-            { counter: "Vigilante", rating: 1, observacao: "Y" },
-            { counter: "Thunderbolt", rating: 2, observacao: "N" }
+            { counter: "Illuminati", rating: 3, observacao: "Y" },
+            { counter: "Vigilante", rating: 2, observacao: "Y" }
         ]
     },
     {
         titulo: "Alpha Flight + Odin",
         subtitulo: [
+            { counter: "Shadow Conclave", rating: 3, observacao: "N" },
+            { counter: "Winter Guard", rating: 3, observacao: "N" },
             { counter: "Brimstone", rating: 3, observacao: "N" },
             { counter: "Secret Warrior", rating: 3, observacao: "N" },
             { counter: "Undying", rating: 3, observacao: "N" },
-            { counter: "Liberty", rating: 1, observacao: "Y" },
-            { counter: "Absolute A-Force + Nico Minoru (no Ironheart)", rating: 1, observacao: "N" },
-            { counter: "Thunderbolts", rating: 1, observacao: "Y" }
+            { counter: "Liberty", rating: 1, observacao: "Y" }
         ]
     },
     {
         titulo: "Alpha Flight + Mephisto + America Chavez",
         subtitulo: [
+            { counter: "Shadow Conclave", rating: 3, observacao: "N" },
+            { counter: "Winter Guard", rating: 3, observacao: "N" },
             { counter: "Brimstone", rating: 3, observacao: "N" },
             { counter: "Secret Warrior", rating: 3, observacao: "N" },
             { counter: "Undying", rating: 3, observacao: "N" },
             { counter: "Hive-Mind + Knull + Scarlet Witch (Zombie) (no Venom and Gwenom)", rating: 3, observacao: "N" },
-            { counter: "Liberty", rating: 3, observacao: "N" },
-            { counter: "Phoenix Force duo + Apocalypse + Thanos (Endgame) + Emma Frost (X-Men)", rating: -1, observacao: "N" }
+            { counter: "Liberty", rating: 3, observacao: "N" }
         ]
     },
     {
         titulo: "Alpha Flight + Mephisto + Ares",
         subtitulo: [
+            { counter: "Shadow Conclave", rating: 3, observacao: "N" },
+            { counter: "Winter Guard", rating: 3, observacao: "N" },
             { counter: "Brimstone", rating: 3, observacao: "N" },
             { counter: "Knull + Undying", rating: 3, observacao: "N" },
             { counter: "Hive-Mind + Knull + Scarlet Witch (Zombie) (no Venom and Gwenom)", rating: 3, observacao: "N" },
             { counter: "Liberty", rating: 2, observacao: "N" },
             { counter: "Mercs for Money + Odin (no Deathpool)", rating: 2, observacao: "N" },
-            { counter: "Nightstalker + Odin (no Moonknight)", rating: 0, observacao: "N" },
-            { counter: "Secret Warrior", rating: -2, observacao: "N" }
+            { counter: "Nightstalker + Odin (no Moonknight)", rating: 0, observacao: "Y" }
         ]
     },
     {
         titulo: "Alpha Flight + Mephisto + Shadow King",
         subtitulo: [
+            { counter: "Shadow Conclave", rating: 3, observacao: "N" },
+            { counter: "Winter Guard", rating: 3, observacao: "N" },
             { counter: "Brimstone", rating: 3, observacao: "N" },
             { counter: "Undying", rating: 3, observacao: "N" },
             { counter: "Fantastic Four (MCU)", rating: 2, observacao: "N" }
@@ -223,16 +235,19 @@ const counters = [
     {
         titulo: "Alpha Flight + Ares + America Chavez",
         subtitulo: [
+            { counter: "Shadow Conclave", rating: 3, observacao: "N" },
+            { counter: "Winter Guard", rating: 3, observacao: "N" },
             { counter: "Brimstone", rating: 3, observacao: "N" },
             { counter: "Undying", rating: 3, observacao: "N" },
             { counter: "Secret Warrior", rating: 2, observacao: "N" },
-            { counter: "Liberty", rating: 3, observacao: "N" },
-            { counter: "Thunderbolt", rating: 1, observacao: "N" }
+            { counter: "Liberty", rating: 3, observacao: "N" }
         ]
     },
     {
         titulo: "Alpha Flight + Super Skrull",
         subtitulo: [
+            { counter: "Shadow Conclave", rating: 3, observacao: "N" },
+            { counter: "Winter Guard", rating: 3, observacao: "N" },
             { counter: "Brimstone", rating: 3, observacao: "N" },
             { counter: "Secret Warrior", rating: 3, observacao: "N" },
             { counter: "Undying", rating: 3, observacao: "N" },
@@ -275,7 +290,7 @@ const counters = [
             { counter: "Brimstone", rating: 3, observacao: "N" },
             { counter: "Fantastic Four (MCU)", rating: 3, observacao: "N" },
             { counter: "Undying", rating: 3, observacao: "N" },
-            { counter: "Starjammer + Odin (no Havok)", rating: 2, observacao: "N" },
+            { counter: "Starjammer + Odin (no Havok)", rating: 2, observacao: "Y" },
             { counter: "Absolute A-Force", rating: 1, observacao: "N" },
             { counter: "Secret Warrior", rating: 2, observacao: "N" }
         ]
@@ -441,7 +456,7 @@ const counters = [
             { counter: "Undying", rating: 3, observacao: "N" },
             { counter: "Liberty + Mephisto", rating: 2, observacao: "N" },
             { counter: "Fantastic Four (MCU)", rating: 1, observacao: "N" },
-            { counter: "Quasar + Ares + Storm + Jean Grey + Havok", rating: 2, observacao: "N" }
+            { counter: "Quasar + Ares + Storm + Jean Grey + Havok", rating: 2, observacao: "Y" }
         ]
     },
     {
@@ -457,7 +472,7 @@ const counters = [
     {
         titulo: "Astral + Blue Marvel",
         subtitulo: [
-            { counter: "Brimstone + Guardian (no Elsa Bloodstone)", rating: 1, observacao: "N" },
+            { counter: "Brimstone + Guardian (no Elsa Bloodstone)", rating: 1, observacao: "Y" },
             { counter: "Secret Warrior", rating: -1, observacao: "N" }
         ]
     },
@@ -488,26 +503,26 @@ const counters = [
     {
         titulo: "Brimstone",
         subtitulo: [
-            { counter: "Brimstone + Emma Frost (no Elsa Bloodstone)", rating: 3, observacao: "N" },
-            { counter: "Winter Guard", rating: 2, observacao: "N" },
-            { counter: "Fantastic Four (MCU) + Emma Frost", rating: -2, observacao: "N" },
-            { counter: "Emma Frost + Emma Frost (X-Men) + Storm + Jean Grey + Ares", rating: -3, observacao: "N" },
-            { counter: "Emma Frost + Black Cat + Scarlet Witch (Zombie) + Havok + Songbird", rating: -2, observacao: "N" },
-            { counter: "Emma Frost + Emma Frost (X-Men) + Havok + Storm + Black Cat", rating: -2, observacao: "N" }
+            { counter: "Brimstone + Emma Frost (no Elsa Bloodstone)", rating: 3, observacao: "Y" },
+            { counter: "Winter Guard", rating: 2, observacao: "Y" },
+            { counter: "Fantastic Four (MCU) + Emma Frost", rating: -2, observacao: "Y" },
+            { counter: "Emma Frost + Emma Frost (X-Men) + Storm + Jean Grey + Ares", rating: -3, observacao: "Y" },
+            { counter: "Emma Frost + Black Cat + Scarlet Witch (Zombie) + Havok + Songbird", rating: -2, observacao: "Y" },
+            { counter: "Emma Frost + Emma Frost (X-Men) + Havok + Storm + Black Cat", rating: -2, observacao: "Y" }
         ]
     },
     {
         titulo: "Brimstone + Apocalypse",
         subtitulo: [
-            { counter: "Winter Guard", rating: 2, observacao: "N" },
-            { counter: "Fantastic Four (MCU) + Professor Xavier", rating: -3, observacao: "N" },
-            { counter: "Annihilator + Quasar + Odin", rating: -3, observacao: "N" },
-            { counter: "Annihilator + Professor Xavier + Emma Forst (X-Men)", rating: -3, observacao: "N" },
-            { counter: "Astral + Professor Xavier (no Moondragon)", rating: -3, observacao: "N" },
-            { counter: "Phoenix Force + Knull + Black Cat + Quasar", rating: -3, observacao: "N" },
-            { counter: "Secret Warriors + Scarlet Witch (Zombie) / Quasar (no Domino)", rating: -2, observacao: "N" },
-            { counter: "Scarlet Witch (Zombie) + Yo-Yo (Raider) + Black Widow (Striker) + Guardian + Black Cat", rating: -2, observacao: "N" },
-            { counter: "Vigilante", rating: -1, observacao: "N" }
+            { counter: "Winter Guard", rating: 2, observacao: "Y" },
+            { counter: "Fantastic Four (MCU) + Professor Xavier", rating: -3, observacao: "Y" },
+            { counter: "Annihilator + Quasar + Odin", rating: -3, observacao: "Y" },
+            { counter: "Annihilator + Professor Xavier + Emma Forst (X-Men)", rating: -3, observacao: "Y" },
+            { counter: "Astral + Professor Xavier (no Moondragon)", rating: -3, observacao: "Y" },
+            { counter: "Phoenix Force + Knull + Black Cat + Quasar", rating: -3, observacao: "Y" },
+            { counter: "Secret Warriors + Scarlet Witch (Zombie) / Quasar (no Domino)", rating: -2, observacao: "Y" },
+            { counter: "Scarlet Witch (Zombie) + Yo-Yo (Raider) + Black Widow (Striker) + Guardian + Black Cat", rating: -2, observacao: "Y" },
+            { counter: "Vigilante", rating: -1, observacao: "Y" }
         ]
     },
     {
@@ -588,6 +603,26 @@ const counters = [
         ]
     },
     {
+        titulo: "Exalted X-Men",
+        subtitulo: [
+            { counter: "Brimstone", rating: 3, observacao: "N" },
+            { counter: "Undying", rating: 3, observacao: "N" },
+            { counter: "Astral", rating: 3, observacao: "N" },
+            { counter: "Absolute A-Force + Jessica Jones (no Wasp and Ironheart)", rating: 3, observacao: "N" },
+            { counter: "Liberty", rating: 3, observacao: "N" },
+            { counter: "Mercs for Money + Taskmaster (no Deadpool)", rating: 3, observacao: "N" },
+            { counter: "Fantastic Four (MCU)", rating: 3, observacao: "N" },
+            { counter: "Insidious Six + Vulture + Green Goblin (Classic)", rating: 3, observacao: "Y" },
+            { counter: "Secret Warrior", rating: 3, observacao: "Y" },
+            { counter: "Nick Fury + Odin + 3 (you can use Blastaar and Thunderstrike and one more)", rating: 3, observacao: "Y" },
+            { counter: "Illuminati + Sentry (no Mr. Fantastic)", rating: 3, observacao: "Y" },
+            { counter: "Starjammer", rating: 2, observacao: "Y" },
+            { counter: "Vigilante", rating: 1, observacao: "N" },
+            { counter: "Phoenix Force + Blastaar + Thunderstrike", rating: 1, observacao: "Y" },
+            { counter: "Thunderbolt", rating: -2, observacao: "N" }
+        ]
+    },
+    {
         titulo: "Fantastic Four (MCU)",
         subtitulo: [
             { counter: "Brimstone", rating: 3, observacao: "N" },
@@ -619,7 +654,7 @@ const counters = [
         subtitulo: [
             { counter: "Professor Xavier + Quasar + Shadow King + Blue Marvel + Dormammu", rating: 3, observacao: "N" },
             { counter: "Brimstone + Apocalypse (no Elsa Bloodstone)", rating: 2, observacao: "N" },
-            { counter: "Professor Xavier + Quasar + Yo-Yo + Black Widow + Guardian", rating: 2, observacao: "N" }
+            { counter: "Professor Xavier + Quasar + Yo-Yo + Black Widow + Guardian", rating: 2, observacao: "Y" }
         ]
     },
     {
@@ -852,7 +887,7 @@ const counters = [
             { counter: "Liberty", rating: 2, observacao: "N" },
             { counter: "Absolute A-Force", rating: 2, observacao: "N" },
             { counter: "Ares + Orchis/Nightstalker/Thunderbolt/Insidious SIx/Hellfire Club", rating: 2, observacao: "N" },
-            { counter: "Vigilante", rating: 1, observacao: "N" },
+            { counter: "Vigilante", rating: 1, observacao: "Y" },
             { counter: "Mighty Avenger", rating: 1, observacao: "N" },
             { counter: "Hive-MInd + Knull + Gorr", rating: 1, observacao: "N" },
             { counter: "Astral", rating: -1, observacao: "N" }
@@ -908,7 +943,7 @@ const counters = [
             { counter: "Undying", rating: 3, observacao: "N" },
             { counter: "Secret Warrior + Ares (no Yo-Yo)", rating: 3, observacao: "N" },
             { counter: "Sinister/Superior Six (Green Goblin (Classic), Kraven, Doctor Octopus, Vulture, Mysterio)", rating: 3, observacao: "N" },
-            { counter: "Insidious Six + Vulture + Green Goblin (Classic)", rating: 3, observacao: "N" },
+            { counter: "Insidious Six + Vulture + Green Goblin (Classic)", rating: 3, observacao: "Y" },
             { counter: "Fantastic Four (MCU)(Stun Big Time with The Thing’s Ultimate)", rating: 3, observacao: "N" },
             { counter: "New Avengers (Stun Big Time with The Thing’s Ultimate)", rating: 3, observacao: "N" },
             { counter: "Out Of Time", rating: 2, observacao: "N" },
@@ -924,17 +959,17 @@ const counters = [
             { counter: "Undying", rating: 3, observacao: "N" },
             { counter: "Brimstone", rating: 3, observacao: "N" },
             { counter: "Secret Warrior", rating: 3, observacao: "N" },
-            { counter: "Hive-Mind + Knull (no Venom)", rating: 3, observacao: "N" },
-            { counter: "Underworld + Kestrel (no Nobu)", rating: 3, observacao: "N" },
-            { counter: "Mercs For Money", rating: 3, observacao: "N" },
-            { counter: "Cabal + Kang + Super Skrull", rating: 2, observacao: "N" },
+            { counter: "Hive-Mind + Knull (no Venom)", rating: 3, observacao: "Y" },
+            { counter: "Underworld + Kestrel (no Nobu)", rating: 3, observacao: "Y" },
+            { counter: "Mercs For Money", rating: 3, observacao: "Y" },
+            { counter: "Cabal + Kang + Super Skrull", rating: 2, observacao: "Y" },
             { counter: "Liberty", rating: 2, observacao: "N" },
             { counter: "Fantastic Four (MCU)", rating: 2, observacao: "N" },
             { counter: "Absolute A-Force", rating: 1, observacao: "N" },
             { counter: "Mighty Avenger", rating: -1, observacao: "N" },
-            { counter: "Orchis", rating: -2, observacao: "N" },
-            { counter: "Nightstalker", rating: -2, observacao: "N" },
-            { counter: "Thunderbolt", rating: -3, observacao: "N" }
+            { counter: "Orchis", rating: -2, observacao: "Y" },
+            { counter: "Nightstalker", rating: -2, observacao: "Y" },
+            { counter: "Thunderbolt", rating: -3, observacao: "Y" }
         ]
     },
     {
@@ -943,12 +978,12 @@ const counters = [
             { counter: "Undying", rating: 3, observacao: "N" },
             { counter: "Brimstone", rating: 3, observacao: "N" },
             { counter: "Secret Warrior", rating: 3, observacao: "N" },
-            { counter: "Hive-Mind + Knull (no Venom)", rating: 3, observacao: "N" },
-            { counter: "Mercs For Money", rating: 3, observacao: "N" },
+            { counter: "Hive-Mind + Knull (no Venom)", rating: 3, observacao: "Y" },
+            { counter: "Mercs For Money", rating: 3, observacao: "Y" },
             { counter: "Fantastic Four (MCU)", rating: 2, observacao: "N" },
             { counter: "Orchis + Ares (no Omega Sentinel)", rating: 2, observacao: "N" },
             { counter: "Liberty", rating: 1, observacao: "N" },
-            { counter: "Nightstalker", rating: 1, observacao: "N" }
+            { counter: "Nightstalker", rating: 1, observacao: "Y" }
         ]
     },
     {
@@ -971,16 +1006,16 @@ const counters = [
     {
         titulo: "Liberty",
         subtitulo: [
-            { counter: "Brimstone", rating: 3, observacao: "N" },
-            { counter: "Mercs for Money + Nightcrawler + Dormammu (no Deathpool and Daken)", rating: 3, observacao: "N" },
-            { counter: "Fantastic Four (MCU) + Emma Frost (no The Thing)", rating: 3, observacao: "N" },
-            { counter: "Hive-Mind + Knull (no Venom)", rating: 2, observacao: "N" },
-            { counter: "Liberty", rating: 1, observacao: "N" },
-            { counter: "Absolute A-Force + Odin/Mephisto (no Wasp)", rating: 1, observacao: "N" },
-            { counter: "Orchis + Odin/Mephisto (no Omega Sentinel)", rating: -1, observacao: "N" },
-            { counter: "Nightstalker + Odin/Mephisto (no Moon Knight)", rating: -1, observacao: "N" },
-            { counter: "Astral", rating: -3, observacao: "N" },
-            { counter: "Annihilator + Phoenix Force (no Silver Surfer and Ultimus)", rating: -3, observacao: "N" }
+            { counter: "Brimstone", rating: 3, observacao: "Y" },
+            { counter: "Mercs for Money + Nightcrawler + Dormammu (no Deathpool and Daken)", rating: 3, observacao: "Y" },
+            { counter: "Fantastic Four (MCU) + Emma Frost (no The Thing)", rating: 3, observacao: "Y" },
+            { counter: "Hive-Mind + Knull (no Venom)", rating: 2, observacao: "Y" },
+            { counter: "Liberty", rating: 1, observacao: "Y" },
+            { counter: "Absolute A-Force + Odin/Mephisto (no Wasp)", rating: 1, observacao: "Y" },
+            { counter: "Orchis + Odin/Mephisto (no Omega Sentinel)", rating: -1, observacao: "Y" },
+            { counter: "Nightstalker + Odin/Mephisto (no Moon Knight)", rating: -1, observacao: "Y" },
+            { counter: "Astral", rating: -3, observacao: "Y" },
+            { counter: "Annihilator + Phoenix Force (no Silver Surfer and Ultimus)", rating: -3, observacao: "Y" }
         ]
     },
     {
@@ -1020,15 +1055,15 @@ const counters = [
     {
         titulo: "New Mutant",
         subtitulo: [
-            { counter: "Orchis", rating: 3, observacao: "N" },
-            { counter: "Insidious SIx + Vulture + Green Goblin (Classic)", rating: 3, observacao: "N" },
-            { counter: "Immortal Weapon", rating: 3, observacao: "N" },
+            { counter: "Orchis", rating: 3, observacao: "Y" },
+            { counter: "Insidious SIx + Vulture + Green Goblin (Classic)", rating: 3, observacao: "Y" },
+            { counter: "Immortal Weapon", rating: 3, observacao: "Y" },
             { counter: "Hive-Mind + Knull", rating: 3, observacao: "N" },
             { counter: "Liberty", rating: 3, observacao: "N" },
             { counter: "Absolute A-Force", rating: 3, observacao: "N" },
             { counter: "Mercs for Money", rating: 3, observacao: "N" },
             { counter: "Fantastic Four (MCU", rating: 3, observacao: "N" },
-            { counter: "Hellfire Club", rating: 2, observacao: "N" },
+            { counter: "Hellfire Club", rating: 2, observacao: "Y" },
             { counter: "Illuminati", rating: 2, observacao: "N" },
             { counter: "Astral", rating: 0, observacao: "N" },
             { counter: "Nightstsalker", rating: -2, observacao: "N" },
@@ -1106,7 +1141,7 @@ const counters = [
         subtitulo: [
             { counter: "Brimstone", rating: 3, observacao: "N" },
             { counter: "Fantastic Four (MCU", rating: 3, observacao: "N" },
-            { counter: "Undying", rating: 3, observacao: "N" },
+            { counter: "Undying", rating: 3, observacao: "Y" },
             { counter: "Hive-Mind + Knull (no Venom)", rating: 3, observacao: "N" },
             { counter: "Mighty Avenger", rating: 2, observacao: "N" }
         ]
@@ -1200,9 +1235,9 @@ const counters = [
         titulo: "Odin + Black Knight + Cosmic Ghost Rider + Gorr + Emma Frost",
         subtitulo: [
             { counter: "Brimstone + Apocalypse (no Elsa Bloodstone)", rating: 3, observacao: "N" },
-            { counter: "Hive-Mind + Knull + Silver Sable (no Venom and Gvenom)", rating: 3, observacao: "N" },
-            { counter: "Liberty + Mephisto (no War Machine)", rating: 2, observacao: "N" },
-            { counter: "Ares + Mephisto + Black Knight + Phoenix Force", rating: 2, observacao: "N" },
+            { counter: "Hive-Mind + Knull + Silver Sable (no Venom and Gvenom)", rating: 3, observacao: "Y" },
+            { counter: "Liberty + Mephisto (no War Machine)", rating: 2, observacao: "Y" },
+            { counter: "Ares + Mephisto + Black Knight + Phoenix Force", rating: 2, observacao: "Y" },
             { counter: "Orchis + Ares + Silver Sable (no Sentinel and Omega Sentinel", rating: -2, observacao: "N" },
             { counter: "Nightstalker + Ares + Silver Sable (no Moon Knight and Agatha Harkness)", rating: -2, observacao: "N" }
         ]
@@ -1277,12 +1312,12 @@ const counters = [
             { counter: "Winter Guard", rating: 3, observacao: "N" },
             { counter: "Undying", rating: 3, observacao: "N" },
             { counter: "Fantastic Four (MCU)", rating: 3, observacao: "N" },
-            { counter: "Quasar + Ares + Havok + Storm + Jean Grey", rating: 3, observacao: "N" },
-            { counter: "Nightstalker + Quasar + Ares", rating: 3, observacao: "N" },
-            { counter: "Absolute A-Force + Quasar + Shadow King", rating: 3, observacao: "N" },
-            { counter: "Liberty + Odin", rating: 3, observacao: "N" },
-            { counter: "Phoenix Force + Mephisto + Scarlet Witch (Zombie) / Quasar", rating: 3, observacao: "N" },
-            { counter: "Mercs for Money + Quasar", rating: 3, observacao: "N" }
+            { counter: "Quasar + Ares + Havok + Storm + Jean Grey", rating: 3, observacao: "Y" },
+            { counter: "Nightstalker + Quasar + Ares", rating: 3, observacao: "Y" },
+            { counter: "Absolute A-Force + Quasar + Shadow King", rating: 3, observacao: "Y" },
+            { counter: "Liberty + Odin", rating: 3, observacao: "Y" },
+            { counter: "Phoenix Force + Mephisto + Scarlet Witch (Zombie) / Quasar", rating: 3, observacao: "Y" },
+            { counter: "Mercs for Money + Quasar", rating: 3, observacao: "Y" }
         ]
     },
     {
@@ -1298,8 +1333,8 @@ const counters = [
             { counter: "Insidious Six + Vulture + Ares", rating: 3, observacao: "N" },
             { counter: "Nightstalker + Ares (no Moon Knight)", rating: 3, observacao: "N" },
             { counter: "Mercs for Money", rating: 3, observacao: "N" },
-            { counter: "Knull + Ares + Void Knight + Carnage + Gorr / Red Goblin", rating: 3, observacao: "N" },
-            { counter: "Apocalypse + Red Hulk + Havok + Songbird + Super Skrull", rating: 3, observacao: "N" },
+            { counter: "Knull + Ares + Void Knight + Carnage + Gorr / Red Goblin", rating: 3, observacao: "Y" },
+            { counter: "Apocalypse + Red Hulk + Havok + Songbird + Super Skrull", rating: 3, observacao: "Y" },
             { counter: "Immortal Weapon", rating: 2, observacao: "N" }
         ]
     },
@@ -1373,7 +1408,7 @@ const counters = [
     {
         titulo: "Professor Xavier + Knull + Nightcrawler + Shadow King + Emma Frost (X-Men)",
         subtitulo: [
-            { counter: "Brimstone", rating: 3, observacao: "N" },
+            { counter: "Brimstone", rating: 3, observacao: "Y" },
             { counter: "Fantastic Four (MCU) + Quasar", rating: -3, observacao: "N" }
         ]
     },
@@ -1395,6 +1430,25 @@ const counters = [
             { counter: "Nightstalker", rating: 3, observacao: "N" },
             { counter: "Thunderbolt", rating: 2, observacao: "N" },
             { counter: "Hell Fire Club", rating: 1, observacao: "N" }
+        ]
+    },
+    {
+        titulo: "Shadow Conclave",
+        subtitulo: [
+            { counter: "Daimon Hellstrom + Living Mummy + Strange (Heartless) + Guardian + Iron Patriot", rating: 3, observacao: "Y" },
+            { counter: "Professor Xavier + Quasar + Kingpin + Storm + Havok", rating: 3, observacao: "Y" },
+            { counter: "Fantastic Four (MCU) + Professor Xavier + Odin (no The Thing and Human Torch)", rating: 2, observacao: "Y" },
+            { counter: "Odin + Knull + Quasar + Blastaar + Thunderstrike", rating: 2, observacao: "Y" },
+            { counter: "Fantastic Four (MCU) + Professor Xavier (no The Thing)", rating: 1, observacao: "Y" },
+            { counter: "Brimstone", rating: -2, observacao: "Y" },
+            { counter: "Winter Guard", rating: -3, observacao: "Y" }
+        ]
+    },
+    {
+        titulo: "Shadow Conclave + Mephisto",
+        subtitulo: [
+            { counter: "Professor Xavier + Quasar + Kingpin + Storm + Havok", rating: 3, observacao: "Y" },
+            { counter: "Brimstone + Guardian (no Elsa Bloodstone)", rating: 2, observacao: "N" }
         ]
     },
     {
@@ -1585,8 +1639,8 @@ const counters = [
         subtitulo: [
             { counter: "Liberty", rating: 3, observacao: "N" },
             { counter: "Out Of Time", rating: 3, observacao: "N" },
-            { counter: "Gamma", rating: 3, observacao: "N" },
-            { counter: "Knowhere", rating: 3, observacao: "N" },
+            { counter: "Gamma", rating: 3, observacao: "Y" },
+            { counter: "Knowhere", rating: 3, observacao: "Y" },
             { counter: "Underworld", rating: 3, observacao: "N" },
             { counter: "Undying + 1", rating: 3, observacao: "N" },
             { counter: "Any Apocalypse team (hard counter)", rating: 3, observacao: "N" },
@@ -1692,7 +1746,7 @@ const counters = [
             { counter: "Absolute A-Force", rating: 3, observacao: "N" },
             { counter: "Mercs For Money", rating: 3, observacao: "N" },
             { counter: "Mighty Avengers", rating: 3, observacao: "N" },
-            { counter: "Hellfire Club", rating: 2, observacao: "N" },
+            { counter: "Hellfire Club", rating: 2, observacao: "Y" },
             { counter: "Orchis", rating: -1, observacao: "N" }
         ]
     }

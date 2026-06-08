@@ -31,7 +31,7 @@ body {
 
 header {
     position: sticky;
-    top: 0;
+    top: -1px;
     width: 100%;
     z-index: 1000;
     background-color: #fff; /* IMPORTANTE: Defina uma cor de fundo, senão o conteúdo de baixo aparece misturado */
@@ -47,6 +47,28 @@ header {
   gap: 12px;
   margin-top: 10px;
   margin-bottom: 25px;
+}
+
+.badge-piscando {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #E67E22;
+    border-radius: 50%;
+    margin-left: 5px;
+    vertical-align: center;
+    animation: piscar 1.5s infinite alternate; 
+}
+
+@keyframes piscar {
+    0% {
+        opacity: 0.2; /* Quase invisível */
+        transform: scale(0.8); /* Um pouco menor */
+    }
+    100% {
+        opacity: 1; /* Totalmente visível */
+        transform: scale(1.1); /* Um pouco maior (dá efeito de pulso) */
+    }
 }
 
 .data {
@@ -320,7 +342,7 @@ button.botao-titulo {
 
 @media screen and (min-width: 1000px) {
     html, body {
-        overflow-x: hidden;
+        overflow-x: clip;
     }
     body {
         padding: 0 20px;
